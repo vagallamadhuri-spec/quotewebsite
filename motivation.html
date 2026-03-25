@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Motivation Quotes</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        body{
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* FULL PAGE BACKGROUND */
+        .motivation{
+            height: 100vh;
+            padding: 80px 50px;
+            background: url("bg5.jpeg") no-repeat center/cover;
+            text-align: center;
+            position: relative;
+        }
+
+        /* NAVBAR (ONLY LOGO CENTERED) */
+        .navbar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo{
+            font-weight: 600;
+            font-size: 22px;
+        }
+
+        /* BACK BUTTON */
+        .back-btn{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 18px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        /* HERO */
+        .hero{
+            margin-top: 40px;
+        }
+
+        .hero h1{
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .hero p{
+            margin-bottom: 40px;
+            color: #444;
+        }
+
+        /* GRID */
+        .quotes-container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        /* CARDS */
+        .card{
+            background: rgba(255,255,255,0.3);
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover{
+            transform: translateY(-10px);
+        }
+
+        .card p{
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card h4{
+            color: purple;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <section class="motivation">
+
+        <!-- BACK BUTTON -->
+        <button class="back-btn" onclick="goBack()">⬅ Back</button>
+
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <div class="logo">● QuoteSpark</div>
+        </nav>
+
+        <!-- HERO -->
+        <div class="hero">
+            <h1>💡 Motivation Quotes</h1>
+            <p>Fuel your drive and push past every limit.</p>
+        </div>
+
+        <!-- QUOTES -->
+        <div class="quotes-container">
+
+            <div class="card">
+                <p>Push yourself, because no one else is going to do it for you.</p>
+                <h4>— UNKNOWN</h4>
+            </div>
+
+            <div class="card">
+                <p>Success doesn’t come from what you do occasionally, it comes from consistency.</p>
+                <h4>— UNKNOWN</h4>
+            </div>
+
+            <div class="card">
+                <p>Don’t stop until you’re proud.</p>
+                <h4>— UNKNOWN</h4>
+            </div>
+
+            <div class="card">
+                <p>Dream it. Wish it. Do it.</p>
+                <h4>— UNKNOWN</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- JAVASCRIPT -->
+    <script>
+function goBack() {
+    
+        window.location.href = "trial.html#explore"; // fallback
+    
+}
+</script>
+</body>
+</html>

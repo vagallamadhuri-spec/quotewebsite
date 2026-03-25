@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Success Quotes</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        body{
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* FULL PAGE BACKGROUND */
+        .page{
+            height: 100vh;
+            padding: 80px 50px;
+            background: url("bg5.jpeg") no-repeat center/cover;
+            text-align: center;
+            position: relative;
+        }
+
+        /* NAVBAR */
+        .navbar{
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .logo{
+            font-weight: 600;
+            font-size: 22px;
+        }
+
+        /* BACK BUTTON */
+        .back-btn{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 18px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* HERO */
+        .hero{
+            margin-top: 40px;
+        }
+
+        .hero h1{
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .hero p{
+            margin-bottom: 40px;
+            color: #444;
+        }
+
+        /* GRID */
+        .quotes-container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        /* CARDS */
+        .card{
+            background: rgba(255,255,255,0.3);
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover{
+            transform: translateY(-10px);
+        }
+
+        .card p{
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card h4{
+            color: purple;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <section class="page">
+
+        <!-- BACK BUTTON -->
+        <button class="back-btn" onclick="goBack()">⬅ Back</button>
+
+        <!-- LOGO -->
+        <nav class="navbar">
+            <div class="logo">● QuoteSpark</div>
+        </nav>
+
+        <!-- TITLE -->
+        <div class="hero">
+            <h1>🚀 Success Quotes</h1>
+            <p>Mindsets and mantras from those who reached the top.</p>
+        </div>
+
+        <!-- QUOTES -->
+        <div class="quotes-container">
+
+            <div class="card">
+                <p>Success is not final, failure is not fatal: it is the courage to continue that counts.</p>
+                <h4>— Winston Churchill</h4>
+            </div>
+
+            <div class="card">
+                <p>Don’t be afraid to give up the good to go for the great.</p>
+                <h4>— John D. Rockefeller</h4>
+            </div>
+
+            <div class="card">
+                <p>Success usually comes to those who are too busy to be looking for it.</p>
+                <h4>— Henry David Thoreau</h4>
+            </div>
+
+            <div class="card">
+                <p>Opportunities don't happen. You create them.</p>
+                <h4>— Chris Grosser</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- JS -->
+    <script>
+        function goBack() {
+            
+                window.location.href = "trial.html#explore";
+    
+            
+        }
+    </script>
+
+</body>
+</html>
+<script>
