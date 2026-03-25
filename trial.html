@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QuoteSpark</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="trialdesign.css">
+</head>
+
+<body>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="home">
+
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <div class="logo">● QuoteSpark</div>
+
+            <ul class="menu">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#quotes">QUOTE</a></li>
+                <li><a href="#explore">EXPLORE</a></li>
+                <li><a href="#about">ABOUT</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- HERO -->
+        <div class="hero">
+            <h1>Discover Quotes<br>That Inspire Greatness</h1>
+            <p>Find powerful words that motivate, inspire and change your mindset.</p>
+            <button class="btn" onclick="goToQuotes()">Explore Quotes</button>
+        </div>
+
+    </section>
+
+    <!-- QUOTES SECTION -->
+    <section id="quotes" class="quotes">
+<div class="hero">
+        <h1>Inspiring Quotes</h1>
+        <p>Words that move the world — and maybe you too.</p>
+    </div>
+
+        <div class="quotes-container">
+
+            <div class="card">
+                <p>The only way to do great work is to love what you do.</p>
+                <h4>— STEVE JOBS</h4>
+            </div>
+
+            <div class="card">
+                <p>In the middle of every difficulty lies opportunity.</p>
+                <h4>— ALBERT EINSTEIN</h4>
+            </div>
+
+            <div class="card">
+                <p>It does not matter how slowly you go as long as you do not stop.</p>
+                <h4>— CONFUCIUS</h4>
+            </div>
+
+            <div class="card">
+                <p>You are never too old to set another goal.</p>
+                <h4>— C.S. LEWIS</h4>
+            </div>
+
+            <div class="card">
+                <p>Believe you can and you're halfway there.</p>
+                <h4>— THEODORE ROOSEVELT</h4>
+            </div>
+
+            <div class="card">
+                <p>Success is not final, failure is not fatal.</p>
+                <h4>— WINSTON CHURCHILL</h4>
+            </div>
+
+        </div>
+
+    </section>
+=    </section> 
+<!-- EXPLORE HERE -->
+<section id="explore" class="explore">
+
+    <h2 class="explore-title">Explore Categories</h2>
+    <p class="explore-sub">Browse quotes by what speaks to your soul today.</p>
+
+    <div class="explore-container">
+
+
+        <a href="motivation.html" class="explore-card">
+
+            <h3>💡 Motivation</h3>
+            <p>Fuel your drive and push past every limit you thought was real.</p>
+        </a>
+
+<a href="wisdom.html" class="explore-card">
+            <h3>🌿 Wisdom</h3>
+            <p>Ancient and modern truths that stand the test of time.</p>
+    </a>
+<a href="success.html" class="explore-card">
+            <h3>🚀 Success</h3>
+            <p>Mindsets and mantras from those who dared to reach the top.</p>
+</a>
+
+
+
+    </div>
+
+</section>
+
+<!-- ================= ABOUT SECTION START ================= -->
+<section id="about" class="about">
+
+    <h2 class="about-title">About QuoteSpark</h2>
+
+    <!-- TEXT BOX 1 -->
+    <div class="about-box">
+        <p>
+            QuoteSpark was born from a simple belief — the right words at the right moment can change everything.
+            We collect timeless quotes from thinkers, leaders, artists, and everyday people who found the perfect words.
+        </p>
+    </div>
+
+    <!-- TEXT BOX 2 -->
+    <div class="about-box">
+        <p>
+            Whether you need a boost of motivation, a moment of calm, or a spark of creativity,
+            QuoteSpark is your pocket companion for words that matter. Each quote is hand-picked
+            and crafted to resonate deeply.
+        </p>
+    </div>
+
+    <!-- STATS -->
+    <div class="about-stats">
+
+        <div class="stat-card">
+            <h3>500+</h3>
+            <p>Curated Quotes</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>20+</h3>
+            <p>Categories</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>10K+</h3>
+            <p>Readers Inspired</p>
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= ABOUT SECTION END ================= -->
+<!-- JS -->
+
+   <script>
+    function goToQuotes(){
+        document.getElementById("quotes").scrollIntoView({
+            behavior: "smooth"
+        });
+    }
+
+    // ⭐ THIS PART handles #explore scroll
+    window.onload = function() {
+        if (window.location.hash === "#explore") {
+            document.getElementById("explore").scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    };
+</script>
+
+</body>
+</html>
+</body>
+</html>
